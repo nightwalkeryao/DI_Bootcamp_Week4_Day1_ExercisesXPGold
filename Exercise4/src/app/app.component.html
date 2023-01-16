@@ -1,0 +1,13 @@
+<h5>1. Create a new Angular project using the Angular CLI.</h5>
+<h5>. In the component template, display the current date and time using the “date” pipe.</h5>
+<p>Today is {{ date|date }}</p>
+<br>
+<br>
+<h5>3. Use the “json” pipe to display an object in a formatted manner.</h5>
+<p><code>{{ obj|json }}</code></p>
+<br>
+<br>
+<h5>4. Use the “async” pipe to retrieve and display data from a mock API service.</h5>
+<div *ngFor="let u of (apiData$|async).users ">
+  <p>id: {{ u.id }} / email: {{ u.email }}</p>
+</div>
